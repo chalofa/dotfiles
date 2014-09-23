@@ -15,5 +15,5 @@ sh -c "`curl -fsSL https://raw.github.com/chalofa/dotfiles/master/install.sh`"
 
 # Credits
 
-Based in https://github.com/plribeiro3000/dotfiles
-YADR: http://skwp.github.com/dotfiles
+- Based in: https://github.com/plribeiro3000/dotfiles
+- YADR: http://skwp.github.com/dotfiles
