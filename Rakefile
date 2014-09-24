@@ -23,6 +23,7 @@ task :install => [:submodule_init, :submodules] do
     file_operation(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_vundle"].execute
   end
+  file_operation(Dir.glob('utils/*')) if want_to_install?('shared configuration (screen)')
 
   Rake::Task["install_prezto"].execute
 
