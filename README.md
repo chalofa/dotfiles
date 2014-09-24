@@ -5,7 +5,7 @@
 - `nano` as preferred EDITOR.
 - SublimeText `subl` as visual EDITOR.
 - rbEnv instead of RVM.
-- RubyMine ignore files.
+- RubyMine, SublimeText & Gedit ignore files.
 
 
 ## Installation:
