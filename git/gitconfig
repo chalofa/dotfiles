@@ -111,7 +111,7 @@
   default = tracking
 [core]
   autocrlf = false
-  editor = vim
+  editor = nano
   excludesfile = ~/.yadr/git/gitignore
 [advice]
   statusHints = false
