@@ -320,7 +320,7 @@ def file_operation(files, method = :symlink)
     if file == 'zshrc'
       File.open(target, 'a') do |zshrc|
         zshrc.puts('for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file')
-        zshrc.puts('source /etc/zsh/zshrc')
+        zshrc.puts('[[ -f /etc/zsh/zshrc ]] && source /etc/zsh/zshrc')
       end
     end
 
