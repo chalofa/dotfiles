@@ -1,10 +1,16 @@
 # === EDITOR ===
-Pry.editor = 'vi'
+Pry.editor = 'nano'
 
 # == Pry-Nav - Using pry as a debugger ==
 Pry.commands.alias_command 'c', 'continue' rescue nil
 Pry.commands.alias_command 's', 'step' rescue nil
 Pry.commands.alias_command 'n', 'next' rescue nil
+Pry.commands.alias_command 'f', 'finish' rescue nil
+Pry.commands.alias_command 'q', 'finish' rescue nil
+
+Pry::Commands.command /^$/, "repeat last command" do
+  _pry_.run_command Pry.history.to_a.last
+end
 
 # === CUSTOM PROMPT ===
 # This prompt shows the ruby version (useful for RVM)
